@@ -10,7 +10,6 @@ const bcrypt = require("bcryptjs");
 
 export const router = express.Router();
 
-// Firebase configuration
 const firebaseConfig = {
   apiKey: 'AIzaSyAiVnY-8Ajak4xVeQNLzynr8skqCgNFulg',
   appId: '1:259988227090:android:db894289cac749ff6c04cb',
@@ -23,7 +22,6 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 const storage = getStorage();
 
-// Multer setup for file uploads
 class FileMiddleware {
   filename = "";
 
